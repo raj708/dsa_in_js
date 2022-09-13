@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursion</title>
+</head>
+<body>
+    <h1>head and tail recursion</h1>
+    <script>
+        // function colors(){
+        //     let data =20;
+        //     console.log(data)
+        //     if(true){
+        //         console.log(data*20)
+        //     }
+        //     else{
+        //         console.log("h")
+        //     }
+        // }
+        // function days(){
+        //     colors()
+        // }
+        // function fruits(){
+        //     days()
+        // }
+        // function topFunction(){
+        //     fruits();
+
+        // }
+        // topFunction();
+
+        function test(x){
+            // console.log(x);
+            if(x>0){
+                test(x-1)
+            }
+            console.log(x);
+        }
+        test(5)
+
+    </script>
+</body>
+</html>
